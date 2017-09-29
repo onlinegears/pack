@@ -2,6 +2,8 @@ FROM node:alpine
 
 MAINTAINER onlinegears
 
+RUN apk add --no-cache git python
+
 # front end
 RUN npm install -g react-tools
 RUN npm install -g @angular/cli
