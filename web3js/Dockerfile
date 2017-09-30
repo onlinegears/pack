@@ -2,7 +2,7 @@ FROM onlinegears/pack:webapp-base
 
 MAINTAINER onlinegears
 
-RUN apk add --no-cache git python
+RUN apk add --no-cache git python make g++
 
 # web3js
-RUN npm install -g web3
+RUN npm install --unsafe-perm -g web3
